@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Unicode Extension",
+    "description": "Helper for converting texts into and from unicode in browser",
+    "version": "1.0",
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "scripting"
+    ],
+    "action": {
+      "default_popup": "default_popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+      }
+  }
